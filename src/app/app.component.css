@@ -1,0 +1,80 @@
+
+.selected {
+    background-color: #4e4e72 !important;
+    color: white;
+}
+
+.button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background-color: #05FF00;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {
+
+    background-color: #016100;
+}
+
+.number {
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    color: #859385;
+}
+
+.number:hover {
+    color: #4e4e72;
+}
+
+.intervals {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .intervals li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .intervals li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+  }
+  .intervals li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .intervals .text {
+    position: relative;
+    top: -3px;
+  }
+  .intervals .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+  .button:disabled {
+      background-color: #859385
+  }

@@ -1,0 +1,19 @@
+
+<div *ngIf="timeInterval">
+    <h2>Name: </h2>
+    <input [(ngModel)]="timeInterval.name" placeholder="test">
+
+    <div>
+        <label> <input type="checkbox"[checked]="timeInterval.isActive" (change)="timeInterval.toggle()"> isActive
+        </label>
+    </div>
+    <div *ngIf="timeInterval.dateStart">
+        <label>{{ timeInterval.dateStart | date:"short"}}</label>
+    </div>
+    <div *ngIf="timeInterval.dateEnd">
+        <label >{{ timeInterval.dateEnd | date: "short" }}</label>
+    </div>
+    <div *ngIf="timeInterval.time">
+        <label>{{timeInterval.time | date: 'HH:mm:ss'}}</label>
+    </div>
+</div>
